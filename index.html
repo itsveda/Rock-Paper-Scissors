@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rock Paper Scissors</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="game-container">
+
+        <h1>Rock Paper Scissors</h1>
+        <p class="subtitle">Choose your move</p>
+
+        <div class="choices">
+            <button onclick="playGame('Rock')">
+                ✊
+                <span>Rock</span>
+            </button>
+
+            <button onclick="playGame('Paper')">
+                ✋
+                <span>Paper</span>
+            </button>
+
+            <button onclick="playGame('Scissors')">
+                ✌️
+                <span>Scissors</span>
+            </button>
+        </div>
+
+        <div class="battle">
+
+            <div class="choice-card">
+                <h3>You</h3>
+                <div id="player-icon" class="choice-icon">❔</div>
+                <p id="player-choice">Waiting...</p>
+            </div>
+
+            <div class="vs">VS</div>
+
+            <div class="choice-card">
+                <h3>Computer</h3>
+                <div id="computer-icon" class="choice-icon">❔</div>
+                <p id="computer-choice">Waiting...</p>
+            </div>
+
+        </div>
+
+        <div id="result-box" class="result-box">
+            <div id="result-icon">🎮</div>
+            <h2 id="result-text">Make your move!</h2>
+        </div>
+
+        <div class="scoreboard">
+
+            <div>
+                <h3>Player</h3>
+                <p id="player-score">0</p>
+            </div>
+
+            <div>
+                <h3>Draws</h3>
+                <p id="draw-score">0</p>
+            </div>
+
+            <div>
+                <h3>Computer</h3>
+                <p id="computer-score">0</p>
+            </div>
+
+        </div>
+
+        <button class="reset-btn" onclick="resetGame()">
+            🔄 Reset Game
+        </button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
